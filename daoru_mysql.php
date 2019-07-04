@@ -41,13 +41,13 @@ class daorumysql{
 //导入源数据库信息
 $db1_host='127.0.0.1';
 $db1_user='root';
-$db1_pwd='nijiaosb';
-$db1_name='daodandao';
+$db1_pwd='123';
+$db1_name='aaa';
 //导入目标数据库信息
 $db2_host='127.0.0.1';
 $db2_user='root';
-$db2_pwd='nijiaosb';
-$db2_name='oadadandaocn';
+$db2_pwd='123456';
+$db2_name='bbb';
 
 $countnum=10; //最大执行多少条
 $fromtablename='wechat_fans';  //源表
