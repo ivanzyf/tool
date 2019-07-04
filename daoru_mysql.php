@@ -81,6 +81,12 @@ foreach ($showdata as $item=>$value){
     $tfont='';
     $isql='';
     $i++;
+    //过滤一些东西这里是 或者可以写转义随便拉，
+    foreach ($dbarr as $itmefont=>$valuefont){
+
+        $value[$itmefont]=str_replace('"','',$value[$itmefont]);
+        $value[$itmefont]=str_replace("'","",$value[$itmefont]);
+    }
     foreach ($dbarr as $itmefont=>$valuefont){
         $tfont.=' `'.$valuefont.'` ,';
         $yfont.=' "'.$value[$itmefont].'",';
